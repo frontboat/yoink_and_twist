@@ -9,7 +9,6 @@ import type {
 } from "react";
 import { forwardRef } from "react";
 import { twMerge } from "tailwind-merge";
-import { Spinner } from "../spinner";
 
 const STYLES = {
   icon: "rounded-2xl border-gray-600 text-gray-200 ",
@@ -88,7 +87,6 @@ export const ButtonOrLink = forwardRef<
       fullWidth = false,
       loading = false,
       loadingText,
-      spinner = <Spinner variant="circle" size="sm" />,
       className,
       texture = true,
       children,
@@ -216,10 +214,10 @@ export const ButtonOrLink = forwardRef<
         )}
 
         {(leftIcon || loading) && (
-          <span className="mr-3.5">{loading ? spinner : leftIcon}</span>
+          <span className="mr-3.5">{leftIcon}</span>
         )}
         <span className="z-10 inline-flex">
-          {loading ? loadingText || children : children}
+          {children}
         </span>
         {rightIcon && <span className="ml-3.5">{rightIcon}</span>}
       </ButtonOrLink>

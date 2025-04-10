@@ -1,5 +1,4 @@
 import type { FC, ReactNode } from "react";
-import { MainFooter } from "../../components/layout/MainFooter";
 import Tourus from "../../components/Tourus";
 import { MainHeader } from "./MainHeader";
 export const MainLayout: FC<{ children: ReactNode }> = (props) => {
@@ -11,7 +10,7 @@ export const MainLayout: FC<{ children: ReactNode }> = (props) => {
       </div>
       <MainHeader />
       <main className="relative z-20">{children}</main>
-      <MainFooter />
+      
     </div>
   );
 };

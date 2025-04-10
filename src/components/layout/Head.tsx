@@ -3,11 +3,11 @@ import { default as HTMLHead } from 'next/head'; // Meta
 import type { ReactElement } from 'react';
 
 const meta = {
-  title: 'Bibliotheca DAO',
+  title: 'Ecliptic',
   description:
-    'The decentralized organization developing on StarkNet in the Loot ecosystem.',
-  website: 'https://bibliothecadao.xyz/',
-  image: 'https://i.ibb.co/KG17Pbh/atlas.png',
+    'Ecliptic is an intelligent audio visual media editor that allows you to create and edit audio visual media with ease.',
+  website: 'https://ecliptic.gg/',
+  image: 'https://i.ibb.co/CptZ9zBk/ecliptic-logo.png',
 };
 
 export function Head(): ReactElement {
