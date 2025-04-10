@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://realms.world/$1",
-      "permanent": true
-    }
-  ]
-}
